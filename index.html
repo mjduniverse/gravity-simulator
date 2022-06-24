@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Simple Gravity Simulator | Mjduniverse.com</title>
+    <meta name="description" content="A very simple gravity simulator that simulates 2D objects that attract each other"></meta>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-182930887-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-182930887-1');
+</script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.0/matter.min.js"></script>
+    <script defer src="script.js"></script>
+    <style>
+        body,html {
+             margin: 0;
+        }
+    </style>
+    <link rel="stylesheet" href="gravsim.css"></link>
+</head>
+<body>
+    <canvas id="gravsim"></canvas>
+    <div class="ctrls">
+        <div class="obj-props ctrl-elm">
+            <span class="vel-lablel">Speed:</span>
+            <input class="vel-ctrl" type="number"></input>
+            <span class="angle-label">Angle:</span>
+            <input class="angle-ctrl" type="number"></input>
+            <span class="r-label">Radius:</span>
+            <input class="r-ctrl" type="number"></input>
+            <span class="m-label">Mass:</span>
+            <input class="m-ctrl" type="number"></input>
+            <span class="color-label">Color:</span>
+            <input class="color-ctrl" type="color"></input>
+        </div>
+    </div>
+    <div class="right-ctrls">
+        <span class="toggle-sim ctrl-elm ctrl-button"></span>
+        <div class="zoom-ctrls ctrl-elm">
+            <span class="zoom-in ctrl-button"></span>
+            <span class="zoom-out ctrl-button"></span>
+        </div>
+        <div class="mouse-tools ctrl-elm">
+            <span class="creation-tool ctrl-button"></span>
+            <!--<span class="orbital-creation-tool ctrl-button"></span>-->
+            <span class="transformation-tool ctrl-button"></span>
+        </div>
+        <div class="sim-ctrls">
+            <!--<span class="collision-control ctrl-button"></span>-->
+        </div>
+    </div>
+</body>
+</html>

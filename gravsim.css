@@ -1,0 +1,107 @@
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
+.ctrls {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0px;
+    display: inline-block;
+    width: 100%;
+    box-shadow: 0 0 10px #000;
+}
+
+input {
+    background-color: #222;
+    color: white;
+    width: 100px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.right-ctrls {
+    position: fixed;
+    color: white;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    height: 490px;
+    width: 70px;
+}
+
+.right-ctrls .ctrl-button {
+    display: block;
+    background-color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.right-ctrls .ctrl-button:hover {
+    background-color: #444;
+}
+
+/*** Right Control Buttons***/
+
+.zoom-out.ctrl-button {
+    background-image: url('./img/gravsim-ctrls-transformations.png');
+    background-size: 68px;
+    background-repeat: no-repeat;
+    background-position-x: 18px;
+    background-position-y: -142px;
+}
+
+.zoom-in.ctrl-button {
+    background-image: url('./img/gravsim-ctrls-transformations.png');
+    background-size: 68px;
+    background-repeat: no-repeat;
+    background-position-x: 18px;
+    background-position-y: -89px;
+}
+
+span.toggle-sim.ctrl-elm.ctrl-button {
+    background-image: url('./img/gravsim-ctrls-transformations.png');
+    background-size: 68px;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: -36px;
+}
+
+span.toggle-sim.ctrl-elm.ctrl-button.looped {
+    background-image: url('./img/gravsim-ctrls-transformations.png');
+    background-size: 68px;
+    background-repeat: no-repeat;
+    background-position-x: 19px;
+    background-position-y: 18px;
+}
+
+span.creation-tool.ctrl-button {
+    background-image: url('./img/gravsim-ctrls-transformations.png');
+    background-size: 103px;
+    background-repeat: no-repeat;
+    background-position-x: -49px;
+    background-position-y: 12px;
+}
+
+span.transformation-tool.ctrl-button {
+    background-image: url('./img/gravsim-ctrls-transformations.png');
+    background-size: 103px;
+    background-repeat: no-repeat;
+    background-position-x: -52px;
+    background-position-y: -70px;
+}
+
+.selected-button-1 {
+    background-color: green !important;
+}
+
+#gravsim {
+    position: absolute;
+}
